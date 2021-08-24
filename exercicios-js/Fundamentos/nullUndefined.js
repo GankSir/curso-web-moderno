@@ -14,3 +14,4 @@ console.log(produto)
 produto.preco = undefined //evite atribuir undefined
 console.log(!!produto.preco)
 produto.preco = null // sem preco
+console.log(produto)
