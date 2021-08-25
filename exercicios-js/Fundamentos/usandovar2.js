@@ -10,3 +10,4 @@ console.log('fora =', numero)
 //dentro do escopo devemos ter variaveis diferente para nao conflitar
 // isso é uma boa pratica de programação
 // fuja do escopo global !
+//esse processo ocorre usando o indentificador var
