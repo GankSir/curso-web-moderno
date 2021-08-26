@@ -7,7 +7,9 @@ function exec () {
 }
 //Uma função define o contexto local daquela função
 
-//objetos são grupos aninhados de cpares, nomes e valor
+//objetos são grupos aninhados de pares, nomes e valor
+
+//EX: const saudacao = 'EPAAA' (Nesse exemplo com esse codigo ativo iria gerar um erro )
 
 const cliente = {
   nome: 'Pedro',
@@ -21,3 +23,6 @@ const cliente = {
 console.log(saudacao)
 console.log(exec())
 console.log(cliente)
+
+//Nesse caso se usar 2 constante com mesmo nome não teremos problemas
+//pois as constantes estão em contexto diferentes
