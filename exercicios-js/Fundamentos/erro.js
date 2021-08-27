@@ -5,7 +5,7 @@ function tratarErroElancar (erro) {
   //throw 'mensagem'
   throw {
     nome: erro.name,
-    msg: erro.message,
+    msg: erro.message, //lancar o tipo do erro
     date: new Date
   }
 
