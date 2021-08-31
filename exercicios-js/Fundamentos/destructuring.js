@@ -26,3 +26,5 @@ console.log(logradouro, numero, cep)
 //nesse proximo exemplo vamos observar um erro de tentar acessar o atributo de um objeto que não existe
 //const { conta: { ag, num } } = pessoa
 //console.log(ag, num)
+
+//se eu tiver usando o op
