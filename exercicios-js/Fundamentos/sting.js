@@ -11,4 +11,4 @@ console.log(escola.substring(0, 3)) //vai do indice 0 ate o indice 3 sem usar o 
 console.log('escola '.concat(escola).concat("!"))//string concatenando com variavel, concatenano com string
 console.log(escola.replace(3, 'e'))// faz a troca de uma letra de string
 
-console.log('Ana,Maria,Pedro'.split(','))//conver uma string é um array, É preciso passar nos parametros um separador pra se tornar um array
+console.log('Ana,Maria,Pedro'.split(','))//converter uma string em um array, É preciso passar nos parametros um separador pra se tornar um array
