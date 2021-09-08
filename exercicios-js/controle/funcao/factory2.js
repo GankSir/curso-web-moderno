@@ -6,4 +6,6 @@ function criarProduto (nome, preco) {
   }
 }
 console.log(criarProduto('Notebook', 2199.49))
-console.log(criarProduto('iPad', 1999.49 ))
+console.log(criarProduto('iPad', 1999.49))
+
+//A factory retorna um Objeto com funções tambem

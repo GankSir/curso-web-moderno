@@ -7,7 +7,7 @@ class Pessoa{
   }
 }
 
-const p1 = new Pessoa('Lucas')
+const p1 = new Pessoa('João')
 p1.falar()
 
 const criarPessoa = nome => {
