@@ -7,7 +7,7 @@ String.prototype.reverse = function(){
 }
 
 console.log('Escola cod3r'.reverse())
-//Você acessa o array ou a string usando o metodo THIS
+//Você acessa o array ou a string usando o metodo THIS...
 Array.prototype.first = function(){
     return this[0]
 }
