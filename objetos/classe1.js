@@ -11,7 +11,7 @@ class cicloFinanceiro {
         this.ano = ano
         this.lancamentos = []
     }
-    addLancamentos(...lancamentos) {
+    addLancamento(...lancamentos) {
         lancamentos.forEach(l => this.lancamentos.push(l))
 
     }
@@ -30,5 +30,5 @@ const salario = new Lancamento('Salario', 45000)
 const contaDeLuz = new Lancamento('luz', -220)
 
 const contas = new cicloFinanceiro(6, 2018)
-contas.addLancamentos(salario, contaDeLuz)
+contas.addLancamento(salario, contaDeLuz)
 console.log(contas.sumario())
