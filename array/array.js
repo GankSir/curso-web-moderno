@@ -9,10 +9,13 @@ console.log(aprovados[1])
 console.log(aprovados[2])
 console.log(aprovados[3])
 
+//aqui adicionmanos mais elmentos nos array
 aprovados[3] = 'Paulo'
-aprovados.push('Abia')
+aprovados.push('Abia') 
 console.log(aprovados.length)
 
+//Nesse exemplo adicionamos um elemento no indice 9 e o array 
+//preencheu os outros elementos como undefined
 aprovados[9] = 'Rafael'
 console.log(aprovados.length)
 console.log(aprovados[8] === undefined)
