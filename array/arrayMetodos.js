@@ -6,7 +6,7 @@ console.log(pilotos)
 pilotos.push('Carlitos')
 console.log(pilotos)
 
-//o pop retira do array um elemento da primeira posição
+//o shift retira do array um elemento da primeira posição
 pilotos.shift()
 console.log(pilotos)
 
