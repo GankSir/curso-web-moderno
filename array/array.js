@@ -31,6 +31,6 @@ console.log(aprovados[2])
 aprovados = ['Bia', 'Carlos', 'Ana']
 //splice, podemos selecionar o elemento do array que queremos trabalhar e
 //logo em seguidas quais elementos vamo excluir a partir daquele acesso 
-//podemos adicionar novos elementos apos excluir ou não tambem.
+//podemos adicionar novos elementos apos excluir ou não tambem...
 aprovados.splice(1, 0, 'João', 'Jose')
 console.log(aprovados)
