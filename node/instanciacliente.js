@@ -4,7 +4,7 @@ const contadorB = require('./instanciaunica')
 const contadorC = require('./instancianova')() //Retorna um objeto
 const contadorD = require('./instancianova')()
 
-contadorA.inc()
+contadorA.inc()  //chamando e incrementando 
 contadorA.inc()
 console.log(contadorB.valor)
 
