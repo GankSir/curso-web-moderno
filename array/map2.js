@@ -12,4 +12,4 @@ const apenasOpreco = produto => produto.preco
 
 const resultado=carrinho.map(paraObjeto).map(apenasOpreco)
 console.log(resultado)
-//retorna um array apenas com os preços
+//retorna um array apenas com os preços..,,
