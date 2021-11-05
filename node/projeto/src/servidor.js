@@ -12,11 +12,12 @@ app.get('/produtos/:id', (req, res, next) => {
     res.sed(bancoDeDados.getProduto(req.params.id))
 })
 
-app.post('produtos', function (req, res, next) {
+app.post('/produtos', function (req, res, next) {
     const produto = bancoDeDados.salvarProduto({
         nome: req.body.name,
         preco: req.body.preco
     })
+    res.send(produto) //JSON
 })
 
 app.listen(porta, () => {
