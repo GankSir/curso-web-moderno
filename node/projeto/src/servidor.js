@@ -5,21 +5,20 @@ const app = express()
 const bancoDeDados = require('./bancosDeDados')
 
 app.get('/produtos', (req, res, next) => {
-    res.send(bancoDeDados.getProduto)// vai converter para JSON
+    res.send(bancoDeDados.getProdutos())//converte para o json
 })
 
 app.get('/produtos/:id', (req, res, next) => {
-    res.sed(bancoDeDados.getProduto(req.params.id))
+    res.send(bancoDeDados.getProduto())
 })
 
-app.post('/produtos', function (req, res, next) {
+app.post('/produtos', (req, res, next) => {
     const produto = bancoDeDados.salvarProduto({
-        nome: req.body.name,
-        preco: req.body.preco
+        nome:req.body.name,
+        preco:req.body.preco
     })
     res.send(produto) //JSON
 })
-
 app.listen(porta, () => {
-    console.log(`servidors executando na porta ${porta},`)
+    console.log(`servidor executando na porta ${porta}.`)
 })
