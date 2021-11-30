@@ -15,6 +15,14 @@ app.get('/produtos/:id', (req, res, next) => {
     res.send(bancoDeDados.getProduto(req.params.id))
 })
 
+app.post('/produtos', (req, res, next) => {
+    const produto = bancoDeDados.salvarProduto({
+        nome: req.body.nome,
+        preco: req.body.preco
+    })
+    res.send(produto) //JSON
+})
+
 app.put('/produtos', (req, res, next) => {
     const produto = bancoDeDados.salvarProduto({
         id: reqparams.id,
@@ -24,13 +32,12 @@ app.put('/produtos', (req, res, next) => {
     res.send(produto) //JSON
 })
 
-app.post('/produtos', (req, res, next) => {
-    const produto = bancoDeDados.salvarProduto({
-        nome: req.body.nome,
-        preco: req.body.preco
-    })
+app.delete('/produtos/:id', (req, res, next) => {
+    const produto = bancoDeDados.excluirProduto(req.params.id)
     res.send(produto) //JSON
 })
+
+
 app.listen(porta, () => {
     console.log(`servidor executando na porta ${porta}.`)
 })

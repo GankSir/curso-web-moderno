@@ -25,4 +25,4 @@ function excluirProduto(id) {
     return produto
 }
 
-module.exports = { salvarProduto, getProduto, getProdutos }
+module.exports = { salvarProduto, getProduto, getProdutos, excluirProduto}
