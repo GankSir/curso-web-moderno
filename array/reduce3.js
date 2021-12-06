@@ -11,4 +11,4 @@ Array.prototype.reduce2 = function (callBack, valorInicial) {
 
 const soma = (total, valor) => total + valor
 const nums = [1, 2, 3, 4, 5, 6]
-console.log(nums.reduce2(soma))
+console.log(nums.reduce2(soma)) //xdddd
